@@ -6,7 +6,7 @@ import express from 'express';
 
 import * as Logger from './utils/logger';
 
-export const setup = app => {
+const setup = app => {
 	app.use(cors());
 	app.use(helmet());
 	app.use(express.json({ limit: '100000kb' }));
